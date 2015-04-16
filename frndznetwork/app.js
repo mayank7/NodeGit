@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var Cookies = require('cookies');
 var Keygrip = require('keygrip');
 var session = require('express-session');
-var dbPath = 'mongodb://localhost/nodebackbone';
+var dbPath = 'mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/frndznetwork';
 
 // simple environment config
 if(app.settings.env['RACK'] == 'production') {
